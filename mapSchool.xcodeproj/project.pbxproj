@@ -14,6 +14,7 @@
 		B1BFF3BD1DC0015C00BFD65F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1BFF3BB1DC0015C00BFD65F /* LaunchScreen.storyboard */; };
 		B1BFF3C81DC0015C00BFD65F /* mapSchoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BFF3C71DC0015C00BFD65F /* mapSchoolTests.swift */; };
 		B1BFF3D31DC0015C00BFD65F /* mapSchoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BFF3D21DC0015C00BFD65F /* mapSchoolUITests.swift */; };
+		B1BFF3E21DC0334000BFD65F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BFF3E11DC0334000BFD65F /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B1BFF3CE1DC0015C00BFD65F /* mapSchoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mapSchoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1BFF3D21DC0015C00BFD65F /* mapSchoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapSchoolUITests.swift; sourceTree = "<group>"; };
 		B1BFF3D41DC0015C00BFD65F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1BFF3E11DC0334000BFD65F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1BFF3E21DC0334000BFD65F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				B1BFF3C61DC0015C00BFD65F /* mapSchoolTests */,
 				B1BFF3D11DC0015C00BFD65F /* mapSchoolUITests */,
 				B1BFF3B01DC0015C00BFD65F /* Products */,
+				B1BFF3E01DC0334000BFD65F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				B1BFF3D41DC0015C00BFD65F /* Info.plist */,
 			);
 			path = mapSchoolUITests;
+			sourceTree = "<group>";
+		};
+		B1BFF3E01DC0334000BFD65F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1BFF3E11DC0334000BFD65F /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,23 +200,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Alex Arovas";
 				TargetAttributes = {
 					B1BFF3AE1DC0015B00BFD65F = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6Z26H684AG;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					B1BFF3C21DC0015C00BFD65F = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6Z26H684AG;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B1BFF3AE1DC0015B00BFD65F;
 					};
 					B1BFF3CD1DC0015C00BFD65F = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6Z26H684AG;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B1BFF3AE1DC0015B00BFD65F;
 					};
@@ -336,6 +351,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -358,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -386,6 +402,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -402,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -417,6 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6Z26H684AG;
 				INFOPLIST_FILE = mapSchool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Arovas-Inc.mapSchool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6Z26H684AG;
 				INFOPLIST_FILE = mapSchool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Arovas-Inc.mapSchool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +533,7 @@
 				B1BFF3D91DC0015C00BFD65F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1BFF3DA1DC0015C00BFD65F /* Build configuration list for PBXNativeTarget "mapSchoolTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +542,7 @@
 				B1BFF3DC1DC0015C00BFD65F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1BFF3DD1DC0015C00BFD65F /* Build configuration list for PBXNativeTarget "mapSchoolUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +551,7 @@
 				B1BFF3DF1DC0015C00BFD65F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
